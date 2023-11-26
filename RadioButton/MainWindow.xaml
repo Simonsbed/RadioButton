@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="RadioButton.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RadioButton"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <PersonPicture x:Name="pp" Height="300"
+                    VerticalAlignment="Top"
+                    Margin="0, 30, 50, 0"
+                    ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png?raw=true"/>
+        <RadioButtons Header="Options">
+            <RadioButton Content="Option1" Checked="RadioButton_Checked"/>
+            <RadioButton Content="Option2" Checked="RadioButton_Checked_1"/>
+            <RadioButton Content="Option3" Checked="RadioButton_Checked_2"/>
+        </RadioButtons>
+    </StackPanel>
+</Window>
